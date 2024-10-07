@@ -2,9 +2,9 @@
 export default function footer() {
   return (
     <div>
-      <header>
-        Header
-      </header>
+      <footer>
+       Footer
+      </footer>
     </div>
   )
 }
