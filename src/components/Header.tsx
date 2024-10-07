@@ -7,8 +7,9 @@ export default function Header() {
       <header>
         <Image src='https://bytegrad.com/course-assets/youtube/example-logo.png'
         alt="Logo description"
-        width={50}
-        height={50}
+        className="w-[35px] h-[35px]"
+        width={35}
+        height={35}
         />
       </header>
     </div>
