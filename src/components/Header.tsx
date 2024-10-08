@@ -1,5 +1,8 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 
 const navLink =[
@@ -16,6 +19,10 @@ const navLink =[
 
 
 export default function Header() {
+
+
+    const pathName = usePathname();
+    console.log(pathName)
 
   return (
     <div>
@@ -34,7 +41,7 @@ export default function Header() {
             <ul className="flex gap-x-5 text-[14px]">
              { navLink.map((link)=>(
                     <li key={link.href}>
-                        <Link className="text-zinc-400" href={link.href}>
+                        <Link href={link.href} className={`${link.href === pathName ? 'text-zinc-900' : 'text-zinc-400'}`} >
                             {link.label}
                         </Link>                                 
                     </li>
