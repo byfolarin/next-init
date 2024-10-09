@@ -1,9 +1,7 @@
-import React from 'react'
-
 export default function Page() {
   return (
-    <div>
-      Hello
+    <div className="flex items-center align-middle">
+      Page
     </div>
   )
 }
