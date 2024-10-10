@@ -6,7 +6,7 @@ export default async function Page() {
     <main className="text-center pt-16">
              <h1 className="text-4xl font-bold mb-5 md:text-5xl">Create Post</h1>
 
-        <form action={createPost}
+        {/* <form action={createPost}
         className="h-10 space-x-2 mt-10">
            <input
             name="title"
@@ -16,6 +16,6 @@ export default async function Page() {
             required /> 
            <button className="h-full bg-blue-500 rounded text-white px-5 ">Submit</button>
         </form>
-    </main>
+    </main> */}
   )
 }
