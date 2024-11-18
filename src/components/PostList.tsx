@@ -1,22 +1,22 @@
-import Link from "next/link"
+// import Link from "next/link"
 
 
 
-export default async function PostList() {
+// export default async function PostList() {
 
-    await new Promise((resolve) => setTimeout(resolve,1000));
-    const response = await fetch('https://dummyjson.com/posts?limit=10');
-    const data = await response.json();
+//     await new Promise((resolve) => setTimeout(resolve,1000));
+//     const response = await fetch('https://dummyjson.com/posts?limit=10');
+//     const data = await response.json();
 
-  return (
-    <div>
-       <ul>
-        {data.posts.map((post) => (
-          <li key={post.id} className="mb-2">
-            <Link href={`/posts/${post.id}`}>{post.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
+//   return (
+//     <div>
+//        <ul>
+//         {data.posts.map((post) => (
+//           <li key={post.id} className="mb-2">
+//             <Link href={`/posts/${post.id}`}>{post.title}</Link>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   )
+// }
